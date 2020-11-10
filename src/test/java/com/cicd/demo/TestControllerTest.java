@@ -21,4 +21,10 @@ public class TestControllerTest {
         Assertions.assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/Hello, World",
                 String.class)).contains("Hello, World");
     }
+
+    @Test
+    public void greetingShouldReturnFalse(){
+        Assertions.assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/Hello, World",
+                String.class)).contains("Hello, World1");
+    }
 }
