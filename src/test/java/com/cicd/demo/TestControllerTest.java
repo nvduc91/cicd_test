@@ -22,12 +22,6 @@ public class TestControllerTest {
                 String.class)).contains("Hello, World");
     }
 
-    // this test still failed for testing
-    @Test
-    public void greetingShouldReturnFalse(){
-        Assertions.assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/Hello, World",
-                String.class)).contains("Hello, World1");
-    }
 
     @Test
     public void greetingShouldReturnTrue(){
