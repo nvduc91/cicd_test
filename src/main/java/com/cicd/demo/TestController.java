@@ -13,4 +13,9 @@ public class TestController {
     public String testFunction(@PathVariable String text) {
         return text;
     }
+
+    private String methodUnused(String input) {
+        // TODO just for Sonar catch
+        return input;
+    }
 }
