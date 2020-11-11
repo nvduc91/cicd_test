@@ -16,6 +16,9 @@ public class TestController {
 
     private String methodUnused(String input) {
         // TODO just for Sonar catch
+        // TODO just for Sonar catch
+        // TODO just for Sonar catch
+        // TODO just for Sonar catch
         return input;
     }
 }
